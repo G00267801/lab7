@@ -20,4 +20,8 @@ export class MovieServiceService {
   }
 
 
+  DeleteMovie(id:String):Observable<any>{
+    return this.http.delete('http://localhost:4000/api/movies'+id);
+}
+
 }
